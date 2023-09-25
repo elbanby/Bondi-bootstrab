@@ -1,0 +1,180 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+li{
+  list-style: none;
+}
+.main-btn{
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.main-btn:hover{
+  background-color: var(--yellow-color);
+  color: var(--red-color);
+}
+.mainTitle::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height:2px;
+  bottom: -20px;
+  right :50%;
+  transform: translatex(50%);
+  background-color: var(--green-color);
+}
+body {
+  /* font-family: "Cairo", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+/* navBar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+ color: var(--green-color); 
+}
+.navbar .searsh{
+  border-left: 1px solid var(--green-color);
+  height: 50%;
+}
+.navbar .searsh svg{
+  color: var(--green-color);
+}
+.navbar .navbar-toggler{
+  color: white;
+  border-color: white;
+  /* font-size: 25px; */
+}
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+ border: 1px solid var(--green-color);
+}
+/* landing */
+.landing{
+  background-color: var(--dark-color);
+  height: calc(100vh - 70px);
+}
+/* Feature */
+.feature .feet .iconHolder{
+  height: 200px;
+  transform: translate(-7%, 10px);
+}
+.feature .feet .iconHolder .number{
+  color: var(--section-color);
+  font-size: 200px;
+  transform:translate(-22%,-12%);
+}
+.feature .feet .iconHolder .icon{
+  color: var(--green-color);
+  bottom: 20px;
+  font-size: 64px;
+}
+.feature .feet h3{
+  color: var(--yellow-color);
+}
+/* Works */
+.works{
+  background-color: var(--section-color);
+}
+.works ul li:hover{
+  color: var(--red-color);
+}
+.works .listWork .box{
+  padding: 0;
+  border:  5px solid white;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+.works .listWork .box::before{
+  content: "Aplication";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #33d1cc85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  transform: translateX(-100%);
+}
+.works .listWork .box:hover::before{
+  transform: translateX(0);
+}
+/* Team */
+.team{
+  background-color: var(--section-color);
+}
+.team .mainTitle h4{
+  color: var(--yellow-color);
+}
+.team .card p{
+  background-color: var(--green-color);
+  color: white;
+}
+/* Projects */
+.projects{
+  background-color: var(--dark-color);
+}
+/*Footer */
+.footer{
+  background-color: var(--dark-color);
+  color:#ffffff80 ;
+}
+.footer p.one span{
+  color: var(--green-color) !important;
+}
+.footer p.two span{
+  color: var(--yellow-color);
+}
+/* subcribe */
+.subcribe{
+   background-color: var(--yellow-color);
+}
+.subcribe input[type="text"]{
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subcribe input[type="text"]:focus{
+  outline: none;
+}
+.subcribe ::placeholder{
+  color: white;
+}
+.subcribe a{
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+.subcribe a:hover{
+  background-color:var(--dark-color) ; 
+}
+/* subcribe */
+/* .footer .icons ul svg{
+  width: 5px;
+  height: 5px;
+} */
+.footer .facebook{
+  background-color: #0a58ca;
+}
+.footer .twitter{
+  background-color: #0d6efd;
+}
+.footer .youtube{
+  background-color:#ff0000 ;
+}
+.footer .linkedin{
+  background-color: #0a58ca;
+}
